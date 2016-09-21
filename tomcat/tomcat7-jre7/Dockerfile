@@ -36,4 +36,6 @@ RUN set -x \
 	&& rm bin/*.bat \
 	&& rm tomcat.tar.gz*
 EXPOSE 8080
-CMD ["startup.sh"]
+CMD ["catalina.sh","run"]
+# ADD write there hope to use cache
+# ADD banmen.war /usr/local/tomcat/webapps
